@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriWorld</title>
+    <link rel="icon" type="image/png" href="D:/projects/AgriWorld/favicon.png">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: url('D:/projects/AgriWorld/bg.jpg') no-repeat center center/cover;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: rgba(34, 139, 34, 0.9);
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 100, 0, 0.9);
+            padding: 10px;
+            box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: #f4f4f4;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+        }
+        .hero h1 {
+            font-size: 48px;
+            text-shadow: 2px 2px 5px black;
+        }
+        .hero p {
+            font-size: 20px;
+        }
+        section {
+            padding: 40px 20px;
+            margin: 20px;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #228B22;
+            font-size: 32px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        footer {
+            background-color: rgba(34, 139, 34, 0.9);
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        /* About Us Styling */
+        .about-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .about-container img {
+            width: 40%;
+            border-radius: 8px;
+            box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+        }
+        .about-container p {
+            width: 55%;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .gallery {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        /* Features */
+        .features-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .features-left {
+            width: 50%;
+        }
+        .features-right img {
+            width: 90%;
+            border-radius: 8px;
+        }
+        /* Contact Form */
+        form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        form button {
+            background-color: #228B22;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        form button:hover {
+            background-color: #006400;
+        }
+        /* Back-to-Top */
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #228B22;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: none;
+        }
+        .back-to-top:hover {
+            background-color: #006400;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to AgriWorld</h1>
+        <p>Your hub for agricultural knowledge and updates</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#services">Our Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero">
+        <h1>Growing the Future</h1>
+        <p>Explore tips, resources, and innovations in agriculture</p>
+    </div>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="about-container">
+            <img src="D:/projects/AgriWorld/Greenhouse.png" alt="About Us">
+            <p>AgriWorld is dedicated to empowering farmers and agricultural enthusiasts with the latest trends and resources. Our mission is to promote sustainable and innovative farming practices.
+                AgriWorld is dedicated to empowering farmers and agricultural enthusiasts with the latest trends and resources. Our mission is to promote sustainable and innovative farming practices that not only increase productivity but also preserve the environment for future generations. We provide valuable insights into modern farming techniques, cutting-edge technology, and effective crop management strategies. Through education and collaboration, we aim to support farmers in achieving higher yields while maintaining ecological balance. At AgriWorld, we believe that by fostering a community of knowledge-sharing and innovation, we can help build a brighter future for agriculture. Together, we can transform the agricultural landscape, making it more resilient, efficient, and environmentally conscious.
+            </p>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="D:/projects/AgriWorld/Agriculture Tools.png" alt="Agriculture Tools">
+            <img src="D:/projects/AgriWorld/Harvest.png" alt="Harvest">
+            <img src="D:/projects/AgriWorld/Farmers Working.png" alt="Farmers Working">
+            <img src="D:/projects/AgriWorld/Greenhouse.png" alt="Greenhouse">
+            <img src="D:/projects/AgriWorld/Weather Forecast.png" alt="Weather Forecast">
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="grid">
+            <div>
+                <h3>Crop Management</h3>
+                <p>Learn effective techniques for managing and optimizing crop yield.</p>
+            </div>
+            <div>
+                <h3>Soil Testing</h3>
+                <p>Understand your soil better with professional testing services.</p>
+            </div>
+            <div>
+                <h3>Market Insights</h3>
+                <p>Stay updated with the latest market trends and pricing.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <h2>Features</h2>
+        <div class="features-container">
+            <div class="features-left">
+                <h3>Weather Forecast</h3>
+                <p>Get accurate weather predictions tailored to your farming needs.</p>
+                <h3>Expert Consultation</h3>
+                <p>Connect with agricultural experts for personalized advice.</p>
+            </div>
+            <div class="features-right">
+                <img src="D:/projects/AgriWorld/Farmers Working.png" alt="Features">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AgriWorld. All rights reserved.</p>
+    </footer>
+
+    <a href="#" class="back-to-top" id="backToTop">Top</a>
+</body
